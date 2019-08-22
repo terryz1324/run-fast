@@ -1,0 +1,18 @@
+.scores {
+  display: flex;
+  flex-direction: row;
+  height: 1000rpx;
+}
+
+.btnStart{
+  display: flex;
+  justify-content: center;
+  margin-top: 20rpx;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30rpx;
+}

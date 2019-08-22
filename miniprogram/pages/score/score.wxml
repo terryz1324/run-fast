@@ -1,0 +1,14 @@
+<view class="scores" >
+<e-score-list name="{{names[0]}}" id="scoreInput" isDisabled="{{isDisable}}"  style="background: #f3c8c8;}" />
+<e-score-list name="{{names[1]}}" id="scoreInput" isDisabled="{{isDisable}}"  style="background: #f2eea8;}" />
+<e-score-list name="{{names[2]}}" id="scoreInput" isDisabled="{{isDisable}}"  style="background: #a8dcf2;}" />
+</view>
+<view class="btnStart">
+<l-button width="500" plain="{{true}}" bind:lintap="reStart" type="error" shape="semicircle">开始新一局</l-button>
+</view>
+<view class="btn">
+
+<l-button width="100" plain="{{true}}" type="error" shape="semicircle">撤回</l-button>
+<l-button width="100" plain="{{true}}" type="default" shape="semicircle">清空</l-button>
+<l-button width="100" plain="{{true}}" type="success" shape="semicircle">结算</l-button>
+</view>

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "e-score-list": "/components/score-list/index"
+  }
+}

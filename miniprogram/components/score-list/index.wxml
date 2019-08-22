@@ -1,0 +1,18 @@
+<view class="score-list" >
+  <text class="name">{{name}}</text>
+  <text class="score">{{totalScore}}</text>
+  <l-input l-class="nameInput" bind:linblur="inputScore" bind:linfocus="onDisabled" bind:linchange="onDisabled" value="{{inputValue}}" type="number" hide-label="{{true}}"  placeholder="本局分数..." disabled="{{isDisabled}}" />
+  
+    
+  <l-button special="{{true}}" bindtap="booom">
+  <image class="boomImg" src="../../images/icons/boom.png"></image>
+  </l-button>
+  <l-button class="name" width="150" plain="{{true}}" type="success" shape="semicircle" bindtap="toAdd">
+  结算
+  </l-button>
+  <block wx:for="{{score}}" wx:for-index="index" wx:key="index">
+    <l-input l-class="nameInput" value="{{score[index]}}" type="number" hide-label="{{true}}"  placeholder="0" />
+    <!-- <text class="score" bindtap="toAdd">{{score[index]}}</text> -->
+  </block>
+  
+</view>

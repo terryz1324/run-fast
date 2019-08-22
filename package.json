@@ -1,0 +1,21 @@
+{
+  "name": "run-fast",
+  "version": "1.0.0",
+  "description": "这是实体跑得快计分系统：",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terryz1324/run-fast.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/terryz1324/run-fast/issues"
+  },
+  "homepage": "https://github.com/terryz1324/run-fast#readme",
+  
+  "devDependencies": {}
+}

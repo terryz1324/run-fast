@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/score/score",
+    "pages/ranking-list/ranking-list"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "壹米跑得快计分器",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icons/user@dis.png",
+        "selectedIconPath": "images/icons/user.png"
+      },
+      {
+        "pagePath": "pages/ranking-list/ranking-list",
+        "text": "排行榜",
+        "iconPath": "images/icons/list@dis.png",
+        "selectedIconPath": "images/icons/list.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "l-button": "miniprogram_npm/lin-ui/button/index",
+    "l-tag": "miniprogram_npm/lin-ui/tag/index",
+    "l-message": "miniprogram_npm/lin-ui/message/index",
+    "l-rate": "miniprogram_npm/lin-ui/rate/index",
+    "l-input": "miniprogram_npm/lin-ui/input/index",
+    "l-tabs": "/miniprogram_npm/lin-ui/tabs/index",
+    "l-tabpanel": "/miniprogram_npm/lin-ui/tabpanel/index",
+    "l-card": "/miniprogram_npm/lin-ui/card/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,15 @@
+<image class="logo" src="../../images/logo.png"></image>
+
+<view class="nickname">
+<l-input l-class="nameInput" id='0' value="{{inputValue}}" bind:linblur="inputName" label="玩家一 ："  placeholder="请输入您的昵称..."></l-input>
+<l-input l-class="nameInput" id='1' value="{{inputValue}}" bind:linblur="inputName" label="玩家二："  placeholder="请输入您的昵称..."></l-input>
+<l-input l-class="nameInput" id='2' value="{{inputValue}}" bind:linblur="inputName" label="玩家三："  placeholder="请输入您的昵称..."></l-input>
+</view>
+
+<view class="btn">
+  <l-button width="300" size="large" bind:lintap="toStart">开始</l-button>
+</view>
+
+<view class="quickstart">
+  <l-button width="100" plain="{{true}}" type="error" shape="semicircle">快速开始</l-button>
+</view>
