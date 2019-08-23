@@ -1,15 +1,38 @@
-<image class="logo" src="../../images/logo.png"></image>
-
+<image class="logo" src="../../images/bg.jpg"></image>
 <view class="nickname">
-<l-input l-class="nameInput" id='0' value="{{inputValue}}" bind:linblur="inputName" label="玩家一 ："  placeholder="请输入您的昵称..."></l-input>
-<l-input l-class="nameInput" id='1' value="{{inputValue}}" bind:linblur="inputName" label="玩家二："  placeholder="请输入您的昵称..."></l-input>
-<l-input l-class="nameInput" id='2' value="{{inputValue}}" bind:linblur="inputName" label="玩家三："  placeholder="请输入您的昵称..."></l-input>
+  <block wx:for="{{inputLabel}}" wx:for-index="index" wx:key="index">
+    <view class="player">
+      <image class="avatar" src="{{avatarImg[index]}}"></image>
+      <l-input l-class="nameInput" label-width="160" id='{{index}}' value="{{inputValue}}" bind:linblur="inputName" label="{{inputLabel[index]}}" placeholder="您的昵称..."></l-input>
+      <l-button l-class="addAvatar" width="60" height="60" special="{{true}}" id="{{index}}" bind:lintap="addAvatar">
+        <l-icon name="add" color="#34BFA3" />
+      </l-button>
+    </view>
+  </block>
 </view>
+
+
+<!-- 
+  <view class="player">
+    <l-input l-class="nameInput" id='1' value="{{inputValue}}" bind:linblur="inputName" label="玩家二：" placeholder="请输入您的昵称..."></l-input>
+    <l-button l-class="avatar" width="60" height="60" special="{{true}}">
+      <l-icon name="add" color="#34BFA3" />
+    </l-button>
+  </view>
+
+  <view class="player">
+    <l-input l-class="nameInput" id='2' value="{{inputValue}}" bind:linblur="inputName" label="玩家三：" placeholder="请输入您的昵称..."></l-input>
+    <l-button l-class="avatar" width="60" height="60" special="{{true}}">
+      <l-icon name="add" color="#34BFA3" />
+    </l-button>
+  </view> -->
+
+
 
 <view class="btn">
   <l-button width="300" size="large" bind:lintap="toStart">开始</l-button>
 </view>
 
-<view class="quickstart">
+<!-- <view class="quickstart">
   <l-button width="100" plain="{{true}}" type="error" shape="semicircle">快速开始</l-button>
-</view>
+</view> -->

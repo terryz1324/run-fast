@@ -1,14 +1,31 @@
-<view class="scores" >
-<e-score-list name="{{names[0]}}" id="scoreInput" isDisabled="{{isDisable}}"  style="background: #f3c8c8;}" />
-<e-score-list name="{{names[1]}}" id="scoreInput" isDisabled="{{isDisable}}"  style="background: #f2eea8;}" />
-<e-score-list name="{{names[2]}}" id="scoreInput" isDisabled="{{isDisable}}"  style="background: #a8dcf2;}" />
-</view>
-<view class="btnStart">
-<l-button width="500" plain="{{true}}" bind:lintap="reStart" type="error" shape="semicircle">开始新一局</l-button>
-</view>
-<view class="btn">
 
-<l-button width="100" plain="{{true}}" type="error" shape="semicircle">撤回</l-button>
-<l-button width="100" plain="{{true}}" type="default" shape="semicircle">清空</l-button>
-<l-button width="100" plain="{{true}}" type="success" shape="semicircle">结算</l-button>
+<view class="scores">
+  <block wx:for="{{names}}" wx:for-index="index" wx:key="index">
+    <view class="player" style="background: {{bgColor[index]}}">
+      <text class="name">{{names[index]}}</text>
+      <view class="avatar">
+      <image class="avatar" src="{{avatarImg[index]}}"></image>
+      </view> 
+      <text class="total-score">{{totalScores[index]}}</text>
+      <l-input l-class="nameInput" id="{{index}}" bind:linblur="inputScore" bind:linfocus="lockOther" value="{{inputValue}}" type="number" hide-label="{{true}}" placeholder="本局分数..." disabled="{{isDisabled[index]}}"></l-input>
+      <!-- <l-button l-class="booom" plain="{{true}}">结算</l-button> -->
+      <scroll-view class="pro-tap" scroll-y="{{true}}">
+        <block wx:for="{{scores[index]}}" wx:for-index="idx" wx:key="idx">
+          <text class="scoreList">{{scores[index][idx]}}</text>
+        </block>
+      </scroll-view>
+    </view>
+  </block>
+
 </view>
+
+<view class="btnStart">
+  <l-button width="500" plain="{{true}}" bind:lintap="reStart" type="error" shape="semicircle">开始新一局</l-button>
+</view>
+
+<!-- <view class="btn">
+
+  <l-button width="100" plain="{{true}}" type="error" shape="semicircle">撤回</l-button>
+  <l-button width="100" plain="{{true}}" type="default" shape="semicircle">清空</l-button>
+  <l-button width="100" plain="{{true}}" type="success" shape="semicircle">结算</l-button>
+</view> -->

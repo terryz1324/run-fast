@@ -35,7 +35,8 @@
     "l-input": "miniprogram_npm/lin-ui/input/index",
     "l-tabs": "/miniprogram_npm/lin-ui/tabs/index",
     "l-tabpanel": "/miniprogram_npm/lin-ui/tabpanel/index",
-    "l-card": "/miniprogram_npm/lin-ui/card/index"
+    "l-card": "/miniprogram_npm/lin-ui/card/index",
+    "l-icon": "/miniprogram_npm/lin-ui/icon/index"
   },
   "sitemapLocation": "sitemap.json"
 }

@@ -1,35 +1,58 @@
 .logo {
   width: 750rpx;
-  height: 320rpx;
+  height: 1000rpx;
 }
 
-.quickstart {
+/* .quickstart {
   width: 750rpx;
   display: flex;
   justify-content: center;
   margin-top: 160rpx;
-}
+} */
 
 .btn {
   display: flex;
   justify-content: center;
-  margin-top: 200rpx;
+  margin-top: 50rpx;
 }
+
 
 .nickname {
   width: 750rpx;
   display: flex;
   flex-direction: column;
+  position: absolute;
   align-items: center;
+  margin-top: 550rpx;
   /* margin-top: 180rpx; */
 }
 
+.player {
+  display: flex;
+  
+}
+
+.avatar {
+  margin-top: 50rpx !important;
+  width: 80rpx !important;
+  height: 80rpx !important;
+  border-radius:50%;
+}
+
 .nameInput {
-  margin-top: 50rpx;
-  width: 500rpx !important;
+  margin-top: 50rpx !important;
+  margin-left: 50rpx !important;
+  width: 350rpx !important;
   font-size: 16px !important;
   border-radius: 3px !important;
   border: 1px solid #ccc !important;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6) !important;
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6) !important;
+}
+
+.addAvatar {
+  width: 60rpx !important;
+  height: 60rpx !important;
+  margin-left: 50rpx !important;
+  margin-top: 70rpx !important;
 }
